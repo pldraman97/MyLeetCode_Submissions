@@ -38,7 +38,7 @@ public:
         for(int i = 0; i < 32; i++)
         {
             ans = ans << 1;
-            ans += (a1[i] % 2) * (a2[i] % 2);
+            ans += (a1[i] & 1) * (a2[i] & 1);
         }
         return ans;
     }
