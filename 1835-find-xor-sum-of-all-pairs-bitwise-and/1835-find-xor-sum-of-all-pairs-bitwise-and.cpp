@@ -9,7 +9,7 @@ public:
             j = 31;
             while(temp)
             {
-                a1[j--] += temp % 2;
+                a1[j--] += temp & 1;
                 temp =  temp >> 1;
                 
             }
@@ -19,7 +19,7 @@ public:
                 j = 31;
                 while(temp)
                 {
-                    a2[j--] += temp % 2;
+                    a2[j--] += temp & 1;
                     temp =  temp >> 1;
                 }
             }
@@ -30,7 +30,7 @@ public:
             j = 31;
             while(temp)
             {
-                a2[j--] += temp % 2;
+                a2[j--] += temp & 1;
                 temp =  temp >> 1;
             }
         }
